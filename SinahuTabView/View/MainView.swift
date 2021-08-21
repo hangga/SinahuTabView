@@ -12,13 +12,13 @@ struct MainView: View {
         TabView{
             FirstView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "list.dash")
                     Text("Siji")
                         .font(.system(size: 50, weight:.bold))
                 }
             SecondView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(systemName: "rectangle.grid.2x2")
                     Text("Loro")
                 }
             ThirdView()
@@ -33,6 +33,8 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        Group {
+            MainView()
+        }
     }
 }
